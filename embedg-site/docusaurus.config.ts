@@ -176,11 +176,6 @@ const config: Config = {
       };
     },
   ],
-
-  scripts: [
-    { src: "/js/setupop.js", defer: true },
-    { src: "https://openpanel.dev/op1.js", defer: true },
-  ],
 };
 
 module.exports = config;

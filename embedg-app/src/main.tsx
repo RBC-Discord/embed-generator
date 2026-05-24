@@ -6,15 +6,13 @@ import { QueryClientProvider } from "react-query";
 import queryClient from "./api/client";
 import { BrowserRouter } from "react-router-dom";
 import { baseUrl } from "./util/url";
-import AnalyticsProvider from "./components/AnalyticsProvider";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       <BrowserRouter basename={baseUrl}>
         <App />
-        <AnalyticsProvider />
       </BrowserRouter>
     </QueryClientProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
